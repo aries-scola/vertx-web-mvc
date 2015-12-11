@@ -227,6 +227,10 @@ public interface ActionResult {
 	public static HttpStatusCodeResult badRequest() {
 		return new HttpStatusCodeResultImpl(HttpResponseStatus.BAD_REQUEST);
 	}
+	
+	public static HttpStatusCodeResult notModified() {
+		return new HttpStatusCodeResultImpl(HttpResponseStatus.NOT_MODIFIED);
+	}
 
 	public static HttpStatusCodeResult conflict() {
 		return new HttpStatusCodeResultImpl(HttpResponseStatus.CONFLICT);
