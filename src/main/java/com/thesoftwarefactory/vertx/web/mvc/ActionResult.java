@@ -288,5 +288,9 @@ public interface ActionResult {
 	
 	public int statusCode();
 
+	public static HttpStatusCodeResult created() {
+		return new HttpStatusCodeResultImpl(HttpResponseStatus.CREATED);
+	}
+
 }
 
